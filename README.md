@@ -51,3 +51,16 @@
 在關閉前，系統會跳出確認視窗，詢問使用者是否確定要關閉程式，避免誤按造成程式意外關閉。
 
 ---
+<img width="514" height="322" alt="image" src="https://github.com/user-attachments/assets/69576c06-4156-45e2-9d6b-1186186135aa" />
+<img width="513" height="323" alt="image" src="https://github.com/user-attachments/assets/e100361c-4e09-4b09-9856-ce7bf8b124df" />
+<img width="512" height="322" alt="image" src="https://github.com/user-attachments/assets/b7b4dd71-3e95-4242-b247-c3fc7e3b863b" />
+<img width="511" height="320" alt="image" src="https://github.com/user-attachments/assets/08e1e024-0fb5-4041-8890-95bf9e1062c0" />
+<img width="513" height="322" alt="image" src="https://github.com/user-attachments/assets/8e55b3f5-5660-43e0-92d0-c432a02aeb51" />
+<img width="512" height="323" alt="image" src="https://github.com/user-attachments/assets/ed61040e-05fc-4522-9c94-d10acddffa3d" />
+
+
+
+
+
+
+
