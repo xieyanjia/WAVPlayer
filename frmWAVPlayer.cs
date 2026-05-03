@@ -34,6 +34,10 @@ namespace WAVPlayer
             if (ofdWAVFile.ShowDialog() == DialogResult.OK)
             {
                 txtPath.Text = ofdWAVFile.FileName;
+
+                // 選擇檔案後，更新狀態為準備就緒
+                lblStatus.Text = "狀態：準備就緒";
+                lblStatus.ForeColor = System.Drawing.Color.Blue;
             }
         }
 
@@ -47,9 +51,16 @@ namespace WAVPlayer
                 player.Play(); // 播放音效
                 //player.PlaySync(); // 同步播放音效，直到播放完成才繼續執行後續程式碼
                 //MessageBox.Show("音效播放完成!", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                // 成功播放後，更新狀態
+                lblStatus.Text = "狀態：正在播放...";
+                lblStatus.ForeColor = System.Drawing.Color.Green; // 變綠色
             }
             catch (Exception ex)
             {
+                // 發生錯誤時，顯示錯誤狀態
+                lblStatus.Text = "狀態：播放發生錯誤";
+                lblStatus.ForeColor = System.Drawing.Color.Red;   // 變紅色
                 MessageBox.Show("無法播放音效檔，請確認檔案路徑是否正確! \n" + ex.Message, "錯誤", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
@@ -59,12 +70,20 @@ namespace WAVPlayer
             // 使用完整檔名建立物件
             player = new SoundPlayer(txtPath.Text);
             player.PlayLooping(); // 重複播放
+
+            // 重複播放時，更新狀態
+            lblStatus.Text = "狀態：正在重複播放...";
+            lblStatus.ForeColor = System.Drawing.Color.Goldenrod;
         }
 
         private void btnStop_Click(object sender, EventArgs e)
         {
             player.Stop(); // 停止播放
             //fsWAV.Close(); // 關閉串流
+            // 按下停止後，更新狀態
+            lblStatus.Text = "狀態：已停止";
+            lblStatus.ForeColor = System.Drawing.Color.Black; // 變回黑色
+
         }
 
         private void btnEnd_Click(object sender, EventArgs e)
